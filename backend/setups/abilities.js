@@ -34,6 +34,10 @@ async function getAbilityDescription(abilityName, lang = 'en') {
 
     const res = await fetch(API_URL + abilityName );
 
+    if (res.status === 404) {
+        return { effect: 'Not Found', short_effect: 'Not Found' };
+    }
+
     if (!res.ok) throw new Error(`HTTP Error: ${res.statusText}`);
 
     const abilityData = await res.json();
