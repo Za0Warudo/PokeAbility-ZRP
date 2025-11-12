@@ -1,0 +1,11 @@
+{
+  "name": "project-zrp",
+  "private": true,
+  "version": "1.0.1",
+  "description": "zrp interview project",
+  "main": "index.js",
+  "author": "Vinicius Gomes",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
