@@ -1,0 +1,29 @@
+.ability-btn {
+    background-color: #ffffff;
+    border: 3px solid #e0e0e0;
+    border-radius: 14px;
+    color: #212529;
+    font-weight: 500;
+    padding: 12px 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition:
+            transform 0.3s ease,
+            border-color 0.3s ease,
+            box-shadow 0.3s ease,
+            color 0.3s ease,
+            background-color 0.3s ease;
+}
+
+.ability-btn:hover {
+    transform: translateY(-5px) scale(1.05);
+    background: linear-gradient(145deg, #ffffff, #f5f8ff);
+    border-color: #007bff;
+    color: #007bff;
+    box-shadow: 0 8px 18px rgba(0, 123, 255, 0.25);
+}
+
+.ability-btn:active {
+    transform: scale(0.96);
+    box-shadow: 0 3px 8px rgba(0, 123, 255, 0.2);
+}

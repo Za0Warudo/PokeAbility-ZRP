@@ -1,5 +1,5 @@
 {
-  "name": "backend-zrp",
+  "name": "pokeability-backend",
   "version": "1.0.1 ",
   "description": "Backend API for Pokémon ability project.",
   "main": "index.js",

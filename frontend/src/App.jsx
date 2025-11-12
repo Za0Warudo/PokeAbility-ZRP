@@ -5,6 +5,7 @@ import Layout from "./components/Layout.jsx";
 import Home from "./pages/Home";
 import Abilities from "./pages/Abilities.jsx";
 import Pokemon from "./pages/Pokemon.jsx";
+import AbilityInfo from "./pages/AbilityInfo.jsx";
 
 function AnimatedRoutes() {
     const location = useLocation();
@@ -14,6 +15,7 @@ function AnimatedRoutes() {
             <Routes location={location} key={location.pathname}>
                 <Route path="/" element={<PageWrapper><Home /></PageWrapper>} />
                 <Route path="/abilities" element={<PageWrapper><Abilities /></PageWrapper>} />
+                <Route path="/abilities/:name" element={ <PageWrapper> <AbilityInfo/> </PageWrapper>} />
                 <Route path="/pokeability" element={<PageWrapper><Pokemon /></PageWrapper>} />
             </Routes>
         </AnimatePresence>
