@@ -1,0 +1,22 @@
+.bg-poke {
+    position: relative;
+    min-height: 100vh; /* ocupa a tela inteira */
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.bg-poke::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("/pokeball_background.jpg");
+    background-repeat: repeat;       /* 🔹 permite a repetição */
+    background-size: 800px 450px;    /* 🔹 controla o tamanho do “bloco” que repete */
+    background-position: center;
+    filter: blur(4px);
+    transform: none;                 /* 🔹 remove o zoom extra */
+    z-index: -1;
+}
+
